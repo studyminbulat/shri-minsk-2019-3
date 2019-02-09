@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=cyrillic');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.event, .notify {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #eaefe5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.notifies {
+    display: flex;
+    /*flex-direction: column;*/
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+
+    background-color: white;
+    border: 1px solid #336600;
+    /*background-color: #336600;*/
+    /*border: none;*/
+    border-radius: 5px;
+    /*color: white;*/
+    width: calc(80px + 30px *2);
+    cursor: pointer;
+}
+
+
+.added {
+    background-color: #eaefe5;
+    border: solid  #cccccc 1px;
+    color:  #cccccc;
+}
+
+a {
+    text-decoration: none;
+    color: #336600;
+}
+
+.shown {
+
+    background-color: #f8f8f8
+}
+
+.shown, .shown a {
+    text-decoration: line-through;
+    color: #336600;
+}
+
+
+@media screen and (max-width: 600px) {
+    .event, .notify, .notifies {
+        flex-direction: column;
+    }
+    button {
+        width: calc(100% - 20px);
+    }
+    .notifies {
+
+        width: 100%;
+    }
+    h1, h2 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}

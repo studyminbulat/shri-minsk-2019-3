@@ -4,9 +4,9 @@ self.addEventListener('install', function(event) {
             return cache.addAll([
                 '',
                 'index.html',
-                // '/style.css',
+                '/style.css',
                 'app.js',
-                'event-list.js',
+                // 'event-list.js',
                 // '/sw-test/star-wars-logo.jpg',
                 // '/sw-test/gallery/bountyHunters.jpg',
                 // '/sw-test/gallery/myLittleVader.jpg',
